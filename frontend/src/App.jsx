@@ -1,10 +1,13 @@
-import { SignInButton } from '@clerk/clerk-react'
+import { SignedOut, SignIn, SignInButton, UserProfile } from '@clerk/clerk-react'
 import React from 'react'
 
 const App = () => {
   return (
     <div>App
-      <SignInButton mode='modal' />
+      <SignedOut>
+        <SignInButton mode='modal' />
+      </SignedOut>
+
     </div>
   )
 }
